@@ -1,0 +1,22 @@
+/* By default (td, body..) use verdana in black. */
+body, td, th , tr {
+	color: #ECECEC;
+	font-size: small;
+	font-family: verdana, sans-serif;
+	line-height: 140%;
+}
+/* The main body of the entire forum. */
+body {
+	background-color: #131313;
+}
+/* Input boxes - just a bit smaller than normal so they align well. */
+input, button
+{
+	color: #000000;
+	font-family: verdana, sans-serif;
+	font-size: 90%;
+}
+#host
+{
+	width:250px;
+}
