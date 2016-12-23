@@ -88,7 +88,7 @@ class hlds
 		}
 		$this->host=gethostbyname($this->host);
 
-		if (!ereg('^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})$',$this->host))
+		if (!preg_match('/^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})$/',$this->host))
 		{
 		    $this->error='Неверный адрес';
 			return 0;
